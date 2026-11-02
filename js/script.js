@@ -5,20 +5,20 @@
   let attempts = 0;
   let usernumber = 0;
 
- let userResponse = prompt("Guess a number between 1 and 10");
+  let userResponse = prompt("Guess a number between 1 and 10");
 
  
   while (usernumber !== randomNumber)
   {
-    usernumber = parseInt(userResponse)
+    usernumber = parseInt(userResponse);
     attempts++;
     if (usernumber > randomNumber)
     {
-        usernumber = ("Your guess was too high. guess again. ");
+        userResponse = prompt("Your guess was too high. guess again. ");
     }
     else if (usernumber < randomNumber)
     {
-        usernumber = ("Your number was too low. guess again. ");
+        userResponse = prompt("Your number was too low. guess again. ");
     }
     else 
     {
